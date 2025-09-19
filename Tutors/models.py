@@ -5,12 +5,13 @@ This is the Models for Tutors
 from django.db import models
 from utils.choices import GENDER, GROUP, QUALIFICATION_LEVEL
 from Subjects.models import Subjects
+from Accounts.models import CustomUser
 
 
 class Tutors(models.Model):
     """This is the Tutor Profiles Model"""
 
-    user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     phone = models.CharField(max_length=10, unique=True)

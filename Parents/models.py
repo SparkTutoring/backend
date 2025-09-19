@@ -3,11 +3,12 @@ This is the Model for the Parent Database
 """
 
 from django.db import models
+from Accounts.models import CustomUser
 
 
 class Parents (models.Model):
     """  This is the Parent Profiles Model """
-    user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     phone = models.CharField(max_length=10, unique=True)

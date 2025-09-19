@@ -8,6 +8,7 @@ from utils.choices import GENDER, YEAR, SCHOOL_TYPE
 from Parents.models import Parents
 from Subjects.models import Subjects
 from Tutors.models import Tutors, TutorSubjects
+from Accounts.models import CustomUser
 
 
 class Students(models.Model):
@@ -15,7 +16,7 @@ class Students(models.Model):
     This is the Student Profiles Model
     """
     user = models.ForeignKey(
-        'auth.User',
+        CustomUser,
         # or models.CASCADE if you want to delete students when user is deleted
         on_delete=models.SET_NULL,
         null=True,
