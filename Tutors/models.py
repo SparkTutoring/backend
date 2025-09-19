@@ -53,6 +53,7 @@ class TutorSubjects(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    # pylint: disable=too-few-public-methods
     class Meta:
         """Meta class for TutorSubjects Model"""
         verbose_name = 'TutorSubject'
