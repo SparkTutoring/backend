@@ -54,3 +54,6 @@ ROLES = [
     ('Student', 'Student'),
     ('Parent', 'Parent')
 ]
+
+CLIENT_ROLES = ['Student', 'Tutor', 'Parent']
+TEAM_ROLES = ['Admin', 'Operations', 'HeadOfDepartment', 'Finance', 'Sales']
