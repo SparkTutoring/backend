@@ -39,3 +39,14 @@ QUALIFICATION_LEVEL = [
     ('A-Level', 'A-Level'),
     ('GCSE', 'GCSE')
 ]
+
+ROLES = [
+    ('Admin', 'Admin'),
+    ('HeadOfDepartment', 'Head of Department'),
+    ('Finance', 'Finance'),
+    ('Sales', 'Sales'),
+    ('Operations', 'Operations'),
+    ('Tutor', 'Tutor'),
+    ('Student', 'Student'),
+    ('Parent', 'Parent')
+]
