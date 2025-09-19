@@ -14,9 +14,10 @@ class Tutors(models.Model):
     experience = models.CharField(max_length=50)
     university = models.CharField(max_length=50)
     group = models.CharField(max_length=50, choices=GROUP)
+    calendarId = models.CharField(max_length=50)
+
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    calendarId = models.CharField(max_length=50)
 
     class Meta:
         """Meta class for Tutors Model"""
