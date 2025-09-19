@@ -1,17 +1,10 @@
 from django.db import models
+from utils.choices import GENDER, GROUP
 
 
 class Tutors(models.Model):
     """This is the Tutor Profiles Model"""
-    GENDER = [
-        ('Male', 'Male'),
-        ('Female', 'Female'),
-        ('Other', 'Other')
-    ]
-    GROUP = [
-        ('Starter', 'Starter'),
-        ('Member', 'Member'),
-    ]
+
     user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
