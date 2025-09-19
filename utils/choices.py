@@ -34,3 +34,8 @@ SERVICE = [
     ('Excel', 'Excel'),
     ('Accelerator', 'Accelerator')
 ]
+
+QUALIFICATION_LEVEL = [
+    ('A-Level', 'A-Level'),
+    ('GCSE', 'GCSE')
+]
