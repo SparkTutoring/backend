@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     # Internal Apps
     'Tutors',
     'Parents',
-    "Students"
+    "Students",
+    'Subjects'
 ]
 
 MIDDLEWARE = [

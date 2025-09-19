@@ -1,3 +1,7 @@
+"""  
+This is the Models for Tutors
+"""
+
 from django.db import models
 from utils.choices import GENDER, GROUP, QUALIFICATION_LEVEL
 from Subjects.models import Subjects

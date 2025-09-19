@@ -1,3 +1,7 @@
+"""  
+This file contains the choices for the models
+"""
+
 GENDER = [
     ('Male', 'Male'),
     ('Female', 'Female'),
